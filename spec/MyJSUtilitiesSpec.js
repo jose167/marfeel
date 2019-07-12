@@ -1,12 +1,12 @@
 //const utils = require("./../src/index.js");
-//import { toLowerCase } from './../src/index.js'
+import { toLowerCase } from './../src/index.js'
 
 describe("MyJSUtilities", function() {
 
     describe(">String Utils", function() {
       it("should be able to lower case a string",function() {
-        //expect(toLowerCase).toBeDefined();
-        //expect(toLowerCase("HELLO WORLD")).toEqual("hello world");
+        expect(toLowerCase).toBeDefined();
+        expect(toLowerCase("HELLO WORLD")).toEqual("hello world");
       });
       it("should be able to upper case a string",function() {
         expect().nothing();
