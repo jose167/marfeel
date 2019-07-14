@@ -20,85 +20,123 @@ body, html {
   padding: 15px;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
 .col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-.textPhone {
+[class*="textPhone"] {
   text-align: right;
   font-size: 22px;
   font-weight: 600;
+}
+
+[class*="textTablet"] {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.textPhone_revenue {
   color: rgb(75, 96, 51);
 }
 
-.textTablet {
-  text-align: left;
-  font-size: 22px;
-  font-weight: 600;
+.textTablet_revenue {
   color: rgb(165, 199, 113);
 }
 
+.textTablet_impresions {
+  color: rgb(109, 162, 196)
+}
+
+.textPhone_impresions {
+  color: rgb(23, 60, 86);
+}
+
+.textTablet_visit{
+  color: rgb(187, 90, 30);
+}
+
+.textPhone_visit{
+  color: rgb(242, 197, 44)
+}
+
 .textPercentage {
-  text-align: left;
-  font-size: 20px;
+
+  font-size: 18px;
   color: #696969;
   font-weight: 600;
+  margin-left: 20px;
+  float: left;
 }
 
 .textAmount {
-  text-align: left;
+  float: left;
+  margin-left: 15px;
   color: #bbc;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .textPercentageRight{
-  text-align: right;
-  font-size: 20px;
+  display: inline-block;
+  margin-left: 130px;
+  font-size: 18px;
   color: #696969;
   font-weight: 600;
 }
 
 .textAmountRight {
-  text-align: right;
   color: #bbc;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  float: right;
 }
 
-#main_impresions {
+#main_impresions, #main_visit, #main_revenue {
   display: none;
 }
 
-#main_visit {
-  display: none;
+.text-revenue, .text-visit, .text-impresions{
+  border-bottom: 2px solid #dedede;
+  margin-bottom: 10px;
 }
 
 /**  Carousel **/ 
 
-#dot1, #dot2, #dot3 {
+.dot {
   height: 25px;
   width: 25px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   margin: 5px;
+  transition: background-color 0.6s ease;
 }
-#dot1{
-  background-color: #696969 
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-/** svg css **/ 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-  svg { border: 1px solid #dedede; }
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/** svg css //svg { border: 1px solid #dedede; } **/ 
+
+svg {
+  width: 450;
+  height: 450;
+}
 
   .axis path, .axis line {
     fill: none;
@@ -124,3 +162,20 @@ body, html {
 }
 
 /* END text inside charts */ 
+@media screen and (max-width: 425px) {
+  
+  [class*="textTablet"] {
+    text-align: unset;
+  }
+
+  .textPercentage {
+    margin-left: 70px;
+  }
+
+  .textPercentageRight {
+    margin-left: 80px;
+  }
+  .textAmountRight {
+    margin-right: 10px;
+  }
+}
