@@ -5,7 +5,7 @@ import dataImpresions from './impresions.json';
 import dataVisit from './visit.json'
 import * as d3 from 'd3';
 
-export { toLowerCase };
+export { toLowerCase, createElements, createShape, createCircles, currentSlide };
 
 const container = document.createElement('div');
 container.id = "container"
