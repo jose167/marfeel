@@ -9,9 +9,9 @@ module.exports = {
       contentBase: './dist'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Output Management'
-    })
+   // new HtmlWebpackPlugin({
+    //  title: 'Output Management'
+   // })
   ],
   output: {
     filename: 'bundle.js',

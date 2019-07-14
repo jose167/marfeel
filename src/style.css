@@ -1,3 +1,126 @@
-.hello {
-    color: red;
+body, html {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  margin: 3vh 0 3vh 0;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.textPhone {
+  text-align: right;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(75, 96, 51);
+}
+
+.textTablet {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(165, 199, 113);
+}
+
+.textPercentage {
+  text-align: left;
+  font-size: 20px;
+  color: #696969;
+  font-weight: 600;
+}
+
+.textAmount {
+  text-align: left;
+  color: #bbc;
+  font-size: 20px;
+  font-weight: 600;
+}
+.textPercentageRight{
+  text-align: right;
+  font-size: 20px;
+  color: #696969;
+  font-weight: 600;
+}
+
+.textAmountRight {
+  text-align: right;
+  color: #bbc;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#main_impresions {
+  display: none;
+}
+
+#main_visit {
+  display: none;
+}
+
+/**  Carousel **/ 
+
+#dot1, #dot2, #dot3 {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+#dot1{
+  background-color: #696969 
+}
+
+/** svg css **/ 
+
+  svg { border: 1px solid #dedede; }
+
+  .axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
   }
+  
+.area { fill: #4ca3bd; }
+
+/* text inside charts */ 
+.insideText{
+  font-size: 40px;
+  font-weight: 700;
+  fill: #bbc;
+  letter-spacing: 0.1em;
+}
+
+.insideNum {
+  fill: #696969;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* END text inside charts */ 

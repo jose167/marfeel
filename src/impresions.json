@@ -1,0 +1,26 @@
+{ 
+    "donut" : {"a": 40, "b": 60},
+    "items": { "class": "impresions",
+                "colourA": "#6DA2C4",
+                "colourB": "#173C56",
+                "title": "IMPRESIONS",
+                "amount": "50.000.000",
+                "tabletper": "40%",
+                "smartphoneper": "60%",
+                "tableNum": "20.000.000",
+                "smartphoneNum": "30.000.000"
+    },
+    "area" : [
+        { "x": 0, "y": 10 },
+        { "x": 1, "y": 10 },
+        { "x": 2, "y": 9 },
+        { "x": 3, "y": 10 },
+        { "x": 4, "y": 13},
+        { "x": 5, "y": 15 },
+        { "x": 6, "y": 14 },
+        { "x": 7, "y": 14 },
+        { "x": 8, "y": 15 },
+        { "x": 9, "y": 15 },
+        { "x": 10, "y":12 }
+      ] 
+}
